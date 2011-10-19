@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Referrer Specific jQuery Greeting</title>
+<link href="style.css" rel="stylesheet" media="screen" type="text/css" />
+<link href="../../demo-assets/demo-style.css" rel="stylesheet" type="text/css" />
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="../../demo-assets/hire-ian.js"></script>
+<script src="greeting.js" type="text/javascript"></script>
+<script src="cookie.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function() {$(".reset").click(function() {$.cookie("greeting", null);});});
+</script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-11991680-1");
+pageTracker._trackPageview();
+} catch(err) {}</script>
+</head>
+
+<body id="referrer">
+
+<a href="http://www.ianlunn.co.uk/" title="Hire Ian"><img id="logo-tab" src="../../images/logo-tab.png" alt="Hire Ian" /></a>
+<ul id="share"> 
+    <li class="twitter"><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="IanLunn">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></li> 
+</ul> 
+
+<p class="credits">Demo by <a href="http://www.ianlunn.co.uk/" title="Freelance Web Design">IanLunn.co.uk</a><br />
+View the tutorial: <a href="http://www.ianlunn.co.uk/blog/code-tutorials/referrer-specific-jquery-greeting/" title="Referrer Specific jQuery Greeting">Referrer Specific jQuery Greeting</a><br />
+Download the demo: <a href="http://www.ianlunn.co.uk/demos/referrer-specific-jquery-greeting/referrer-specific-jquery-greeting.zip" title="Referrer Specific jQuery Greeting">Demo</a>
+</p>
+
+<p>Note: For the purpose of demonstration, the referral check has been disabled so the demo shows regardless of how you got to this page.</p>
+
+<p>This script uses a cookie to make sure the greeting only shows once. <a href="#" class="reset">Click here to reset the cookie</a> then refresh the page to see the greeting again.</p>
+
+</body>
+</html>

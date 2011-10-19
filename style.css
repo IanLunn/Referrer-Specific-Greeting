@@ -1,0 +1,29 @@
+/*
+CSS for the demo: Referrer Specific jQuery Greeting
+Author: Ian Lunn
+Author URL: http://www.ianlunn.co.uk/
+Demo URL: http://www.ianlunn.co.uk/demos/referrer-specific-jquery-greeting/
+Tutorial URL: http://www.ianlunn.co.uk/blog/code-tutorials/referrer-specific-jquery-greeting/
+License: http://creativecommons.org/licenses/by-sa/3.0/ (Attribution Share Alike). Please attribute work to Ian Lunn simply by leaving these comments in the source code or if you'd prefer, place a link on your website to http://www.ianlunn.co.uk/.
+*/
+
+body{margin: 0; padding: 0;}
+#greeting{
+	background: rgb(0,0,0); /*fall back background colour for browsers that don't support rgba*/
+	background: rgba(0,0,0,0.9); /*background colour with opacity for modern browsers*/
+	bottom: -60px; /*hide the greeting div below the browser window until it's needed*/
+	color: white;
+	display: none;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 1em;
+	height: 59px;
+	overflow: hidden; /*fixes a 'trailing animation' glitch in Opera*/
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+}
+#greeting a{color: white; font-weight: bold;}
+#greeting a:hover{text-decoration: none;}
+#greeting p{margin: 20px 0;}
+#greeting img{float: left; margin: 10px;}
+#greeting .close-button{cursor: pointer; float: right; font-weight: bold; margin: 5px 20px 5px 5px;}
